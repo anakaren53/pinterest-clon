@@ -16,7 +16,7 @@ body{
 }
 /*comentario*/
 header nav{
-    width: 98vw;
+    width: 99vw;
     height: 80px;
     font-size: 16px;
     background-color: white;
@@ -108,8 +108,8 @@ header nav{
  .contenido{
     position: absolute;
     margin-top: 80px;
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-left: 7px;
+    margin-right: 7px;
  }
 
  .imagenes{
@@ -185,3 +185,90 @@ header nav{
    display: none;
  }
 
+ @media (max-width: 1200px){
+   
+   .imagenes{
+      columns: 4 100px;
+      min-width: 90px;
+      max-width: px;
+   }
+
+   .card-image img{
+      border-radius: 15px;
+      min-width: 180px;
+      max-width: 200px;
+   }
+   .button{
+      left: 50%;
+      top: 5%;
+    }
+    .oculto1{
+      left: 65%;
+      bottom: 20px;
+    }
+   
+    .oculto2{
+      left: 82%;
+      bottom: 20px;
+    }
+}
+   @media (max-width: 850px){
+   
+      .imagenes{
+         columns: 3 100px;
+         min-width: 90px;
+         max-width: px;
+      }
+   
+      .card-image img{
+         border-radius: 15px;
+         min-width: 180px;
+         max-width: 200px;
+      }
+ }
+ @media (max-width: 600px){
+   .contenido{
+      margin-top: -15px;
+   }
+   .imagenes{
+      columns: 2 180px;
+   }
+
+   .card-image img{
+      border-radius: 15px;
+      min-width: 100px;
+      max-width: 180px;
+   }
+ }
+
+ @media (max-width: 450px){
+   .contenido{
+      margin-top: -15px;
+   }
+   .imagenes{
+      columns: 2 180px;
+   }
+
+   .card-image img{
+      border-radius: 15px;
+      min-width: 100px;
+      max-width: 180px;
+   }
+   .button{
+      left: 45%;
+      top: 5%;
+    }
+    .oculto1{
+      left: 65%;
+      bottom: 20px;
+    }
+   
+    .oculto2{
+      left: 82%;
+      bottom: 20px;
+    }
+
+   header{
+      display: none;
+   }
+ }
